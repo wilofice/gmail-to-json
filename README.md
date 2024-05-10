@@ -1,7 +1,7 @@
 # gmail-to-json
 Export all your Gmail emails to JSON
 
-I personally find Gmail API to be a bit confusing for beginners. The API’s wizard comes handy to create the project, get credentials, and authenticate them. However, the process that should be followed after that is not mentioned clearly.
+I’ve noticed that the Gmail API can be somewhat perplexing for those just starting out. While the API’s setup wizard is useful for establishing the project, obtaining credentials, and performing authentication, the subsequent steps are not as straightforwardly outlined.
 
 Therefore, I have created a Python script that does the following:
 1. Scrapes all emails from your mailbox

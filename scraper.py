@@ -1,14 +1,8 @@
-import requests
-import pickle
 import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
-import base64
-import email
-import json
 from mailhelpers import gmail_func
-import xlsxwriter 
 
 from google.oauth2.credentials import Credentials
 
@@ -31,7 +25,7 @@ def main():
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
                 'credentials.json', SCOPES)
-            creds = flow.run_local_server(port=10)
+            creds = flow.run_local_server(port=6001)
         # Save the credentials for the next run
         with open('token.json', 'w') as token:
             token.write(creds.to_json())

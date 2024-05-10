@@ -1,6 +1,4 @@
 import base64
-import email
-from httplib2 import Http
 from bs4 import BeautifulSoup
 import csv
 from time import strftime, gmtime
@@ -148,7 +146,7 @@ class gmail_func:
         print('... all Done!')
         
     def export_json(self, msg_id_list):
-        file = 'emails_%s.json' % (strftime("%Y_%m_%d_%H%M%S", gmtime()))
+        file = 'emails_%s.json' % (strftime("%Y_%m_%d_%H%M%S", gmtime())) 
         
         out = {"emails": []}
         
